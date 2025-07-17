@@ -63,8 +63,8 @@ encoding: UTF-8
 <data_sources>
   <primary>user_direct_input</primary>
   <fallback_sequence>
-    1. @~/.claude/CLAUDE.md
-    2. @~/.agent-os/standards/tech-stack.md
+    1. @~/.agent-os/standards/tech-stack.md
+    2. @~/.claude/CLAUDE.md
     3. Cursor User Rules
   </fallback_sequence>
 </data_sources>
@@ -285,8 +285,8 @@ encoding: UTF-8
   <for_each item="required_items">
     <if_not_in>user_input</if_not_in>
     <then_check>
-      1. @~/.claude/CLAUDE.md
-      2. @~/.agent-os/standards/tech-stack.md
+      1. @~/.agent-os/standards/tech-stack.md
+      2. @~/.claude/CLAUDE.md
       3. Cursor User Rules
     </then_check>
     <else>add_to_missing_list</else>
@@ -480,12 +480,12 @@ encoding: UTF-8
 
 ### Development Standards
 - **Code Style:** @~/.agent-os/standards/code-style.md
-- **Best Practices:** @~/.claude/standards/best-practices.md
+- **Best Practices:** @~/.agent-os/standards/best-practices.md
 
 ### Project Management
 - **Active Specs:** @.agent-os/specs/
-- **Spec Planning:** Use `@.agent-os/instructions/create-spec.md`
-- **Tasks Execution:** Use `@.agent-os/instructions/execute-tasks.md`
+- **Spec Planning:** Use `@~/.agent-os/instructions/create-spec.md`
+- **Tasks Execution:** Use `@~/.agent-os/instructions/execute-tasks.md`
 
 ## Workflow Instructions
 
