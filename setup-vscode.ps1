@@ -130,7 +130,7 @@ description: "Agent OS $baseName standards"
 
         Write-Host "  ✓ $targetFile"
     } catch {
-        Write-Error "  ❌ Failed to download $FileName`: $($_)"
+        Write-Error "  ❌ Failed to download $(FileName): $($_)"
         return 1
     }
     return 0

@@ -37,7 +37,6 @@ function Download-File {
     )
 
     $FileName = Split-Path -Path $OutputPath -Leaf
-    $DestinationPath = Split-Path -Path $OutputPath -Parent
 
     if ((Test-Path -Path $OutputPath) -and -not $Overwrite) {
         Write-Host "  ⚠️  $OutputPath already exists - skipping"
